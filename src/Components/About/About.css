@@ -1,0 +1,152 @@
+.about-left img {
+    height: 260px;
+    width: 260px;
+    border-radius: 5px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin: 100px 170px;
+}
+
+.about-title h1 {
+    font-size: 50px;
+    font-weight: 600;
+    padding: 0px 20px;
+}
+
+.about-title {
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+.about-title img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.about-sections {
+    display: flex;
+    gap: 80px;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-para {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-skill {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.3s;
+}
+
+.about-skill p {
+    min-width: 120px;
+    font-size: 18px;
+    font-weight: 500;
+    background: linear-gradient(270deg, #b6b112 10%, #b52d1b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 7px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #b6b112 10%, #b52d1b 100%);
+}
+
+.about-skill:hover {
+   transform: scale(1.05);
+   transition: 0.3s;
+}
+
+
+@media(max-width:768px){
+    .about {
+        gap: 55px;
+        align-items: start;
+        /* width: 720px; */
+        /* margin: 40px 60px; */
+        margin: 50px 70px;
+    }
+    .about-title h1 {
+        font-size: 40px;
+        padding: 0;
+    }
+    .about-title img {
+        width: 140px;
+        /* right: -8px; */
+    }
+    .about-sections {
+        flex-direction: column;
+    }
+    .about-left {
+        display: none;
+    }
+    .about-para {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .about-skill {
+        gap: 17px;
+        align-items: center;
+    }
+    
+}
+@media(max-width: 480px) {
+    .about {
+        gap: 20px; 
+        align-items: start;
+        margin: 15px; 
+    }
+    .about-title h1 {
+        font-size: 25px; 
+        padding: 0;
+    }
+    .about-title img {
+        max-width: 100%;
+        height: auto;
+    }
+    .about-sections {
+        flex-direction: column; 
+    }
+    .about-left {
+        display: none; 
+    }
+    .about-para {
+        font-size: 15px; 
+        line-height: 21px; 
+    }
+    .about-skill {
+        gap: 10px; 
+        align-items: center;
+        /* margin-top: 40px; */
+    }
+    .about-skills {
+        margin-top: -20px;
+    }
+}
